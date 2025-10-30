@@ -8,5 +8,5 @@
 ## What is Docker Compose file..?
 ### Ans:
 
-## BASIC COMMANDS OF DOCKER AND DOCKER-COMPOSE WITH EXPLANATIONS
+## Basic Commands Of Docker And Docker-Compose With Explanations
 
