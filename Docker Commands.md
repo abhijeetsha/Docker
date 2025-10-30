@@ -1,9 +1,9 @@
 # Basic Commands Of Docker
 ## 1) Basic Docker Commands:-
-* docker --version	     Check Docker version
-* docker info	           Show system-wide Docker information
-* docker images	         List all Docker images
-* docker ps	             List running containers
+* "docker --version"	>>>>> Check Docker version
+* "docker info"	 >>>>> Show system-wide Docker information
+* "docker images"	 >>>>> List all Docker images
+* "docker ps"	 >>>>> List running containers
 * docker ps -a	         List all containers (including stopped)
 * docker pull <image_name>	    Download an image from Docker Hub
 * docker run <image_name>	      Run a container from an image
