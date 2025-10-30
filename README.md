@@ -44,6 +44,10 @@ These containers ensure that your app runs the same way on any system, regardles
       * MYSQL_ROOT_PASSWORD: example
 ### Then Run This Command:
   * docker-compose up
+## 🔁 Summary:
+  * Docker is Platform for running apps in containers with command is "docker run"
+  * Docker File is a instructions to build an image FROM python 3.10
+  * Docker-compose file is define manage multiple
 
 ## Basic Commands Of Docker And Docker-Compose With Explanations
 
