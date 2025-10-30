@@ -22,10 +22,28 @@ These containers ensure that your app runs the same way on any system, regardles
    * RUN pip install -r requirements.txt
 ### # Step 5: Command to run the app
    * CMD ["python", "app.py"]
-
+### After that run Command for building Docker Images
+   * docker build -t myapp .
+### Ferm Images you can make Containers Command is:
+   * docker run <imageid or image-name> 
+### Docker reads this file and builds an image that you can run as a container.
 
 ## What is Docker Compose file..?
-### Ans:
+### Ans:Docker Compose is a tool that lets you define and run multi-container Docker applications using a YAML file called docker-compose.yml.
+### Instead of starting each container manually, you define all services (like app, database, Redis, etc.) in one file and run them together.
+###🔹 Example docker-compose.yml:
+* version: '3'
+* services:
+  * web:
+    * build: .
+    * ports:
+      * - "5000:5000"
+  * db:
+    * image: mysql:5.7
+    * environment:
+      * MYSQL_ROOT_PASSWORD: example
+### Then Run This Command:
+  * docker-compose up
 
 ## Basic Commands Of Docker And Docker-Compose With Explanations
 
