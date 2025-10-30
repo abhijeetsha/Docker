@@ -35,6 +35,18 @@
 * VOLUME >>>>> Create mount point for volumes
 * LABEL	>>>>> Add metadata (like maintainer info)
 
+## 3) Docker Compose Basic Commands:-
+* docker-compose --version >>>>>	Check Docker Compose version
+* docker-compose up	  >>>>> Start all services defined in docker-compose.yml
+* docker-compose up -d	  >>>>> Start services in detached (background) mode
+* docker-compose down	  >>>>> Stop and remove all services/containers
+* docker-compose ps	 >>>>> List all running services
+* docker-compose build	 >>>>> Build images defined in Compose file
+* docker-compose restart	>>>>> Restart services
+* docker-compose logs	 >>>>> View logs from all services
+* docker-compose exec <service> bash	>>>>> Open shell inside a running service container
+* docker-compose stop	 >>>>> Stop services without removing them
+* docker-compose rm	 >>>>> Remove stopped services
 
 
 
