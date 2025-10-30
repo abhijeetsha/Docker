@@ -23,17 +23,17 @@
 
 ## 2) Dockerfile Commands:-
 ### These are instructions used inside a Dockerfile (not CLI commands):
-* FROM	Set base image (e.g., FROM ubuntu:20.04)
-* WORKDIR	Set working directory inside container
-* COPY	Copy files from host to container
-* ADD	Similar to COPY, but supports URLs and archives
-* RUN	Execute a command during build (e.g., RUN apt-get install)
-* CMD	Command that runs when container starts
-* ENTRYPOINT	Set main executable for the container
-* EXPOSE	Document the port the container listens on
-* ENV	Set environment variables
-* VOLUME	    ==Create mount point for volumes
-* LABEL	      >>Add metadata (like maintainer info)
+* FROM	>>>>> Set base image (e.g., FROM ubuntu:20.04)
+* WORKDIR	>>>>> Set working directory inside container
+* COPY	>>>>> Copy files from host to container
+* ADD	 >>>>> Similar to COPY, but supports URLs and archives
+* RUN	>>>>> Execute a command during build (e.g., RUN apt-get install)
+* CMD	>>>>> Command that runs when container starts
+* ENTRYPOINT >>>>>	Set main executable for the container
+* EXPOSE	>>>>> Document the port the container listens on
+* ENV	>>>>> Set environment variables
+* VOLUME >>>>> Create mount point for volumes
+* LABEL	>>>>> Add metadata (like maintainer info)
 
 
 
