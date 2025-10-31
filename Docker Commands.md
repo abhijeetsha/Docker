@@ -1,5 +1,5 @@
 # Basic Commands Of Docker
-## 1) Basic Docker Commands:-
+## 🔹 Basic Docker Commands:-
 * docker --version	>>>>> Check Docker version
 * docker info	 >>>>> Show system-wide Docker information
 * docker images	 >>>>> List all Docker images
@@ -21,7 +21,7 @@
 * docker network ls	 >>>>> List Docker networks
 * docker volume ls	 >>>>> List Docker volumes
 
-## 2) Dockerfile Commands:-
+## 🔹 Dockerfile Commands:-
 ### These are instructions used inside a Dockerfile (not CLI commands):
 * FROM	>>>>> Set base image (e.g., FROM ubuntu:20.04)
 * WORKDIR	>>>>> Set working directory inside container
@@ -35,7 +35,7 @@
 * VOLUME >>>>> Create mount point for volumes
 * LABEL	>>>>> Add metadata (like maintainer info)
 
-## 3) Docker Compose Basic Commands:-
+## 🔹 Docker Compose Basic Commands:-
 * docker-compose --version >>>>>	Check Docker Compose version
 * docker-compose up	  >>>>> Start all services defined in docker-compose.yml
 * docker-compose up -d	  >>>>> Start services in detached (background) mode
