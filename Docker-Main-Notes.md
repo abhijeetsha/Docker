@@ -14,19 +14,19 @@
 * Each instruction defines how the image is built — for example, what base image to use, what dependencies to install, and what command to run.
 
 ## 🧩 Example:
-* ### # Start from a base image
+* #### # Start from a base image
 * FROM python:3.10
 
-* ### # Set working directory
+* #### # Set working directory
 * WORKDIR /app
 
-* ### # Copy code into container
+* #### # Copy code into container
 * COPY . .
 
-* ### # Install dependencies
+* #### # Install dependencies
 * RUN pip install -r requirements.txt
 
-* ### # Command to run app
+* #### # Command to run app
 * CMD ["python", "app.py"]
 
 ## 🧱 3. What is a Docker Image?
@@ -118,13 +118,33 @@
 * You can use one stage to build your app (with dependencies and tools) and another stage to copy only the final output.
 
 ## 🧩 Example:
-### # Build stage
+#### # Build stage
 * FROM golang:1.20 as builder
 * WORKDIR /app
 * COPY . .
 * RUN go build -o myapp
 
-### # Final stage (small runtime image)
+#### # Final stage (small runtime image)
 * FROM alpine:latest
 * COPY --from=builder /app/myapp /usr/local/bin/myapp
 * CMD ["myapp"]
+👉 This reduces image size and improves performance.
+
+## 📊 10. What is Monitoring and Logging in Docker?
+### Ans: Monitoring and Logging are used to track container performance, resource usage, and logs.
+
+## 🧾 Logging
+* Docker captures container logs via the stdout/stderr streams.
+* You can view logs with:
+* docker logs <container_id>
+* Logs can be forwarded to systems like:
+    * ELK Stack (Elasticsearch, Logstash, Kibana)
+    * Fluentd
+    * Splunk
+
+### 📈 Monitoring
+* Tools to monitor containers’ CPU, memory, network, and disk:
+   * Docker Stats (basic built-in)
+   * Prometheus + Grafana
+   * cAdvisor
+   * Datadog, New Relic, Sysdig
