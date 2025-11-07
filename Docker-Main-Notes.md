@@ -14,16 +14,16 @@
 * Each instruction defines how the image is built — for example, what base image to use, what dependencies to install, and what command to run.
 
 ## 🧩 Example:
-* # Start from a base image
+* ### #Start from a base image
 * FROM python:3.10
 
-* # Set working directory
+* ### # Set working directory
 * WORKDIR /app
 
-* # Copy code into container
+* ### # Copy code into container
 * COPY . .
 
-* # Install dependencies
+* ### # Install dependencies
 * RUN pip install -r requirements.txt
 
 * # Command to run app
